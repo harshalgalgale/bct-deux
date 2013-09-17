@@ -1,0 +1,152 @@
+.table {
+    color:#000000;
+    background-color: #f5f5f5;
+}
+
+#map {
+    height: 65em;
+}
+
+#left-panel {
+    height: 65em;
+
+}
+
+body {
+    padding-top: 80px;
+    /*background-color: #2C3E50;*/
+
+}
+
+.rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+html, body, #map, #sidebar, #container {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    padding-top: 50px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.panel-heading a:hover {
+    text-decoration: none;
+}
+
+#loading {
+    position: absolute;
+    width: 220px;
+    height: 19px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -110px;
+    z-index: 20001;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+    /*color: white;*/
+    white-space: nowrap;
+}
+
+.tt-dropdown-menu {
+    overflow: auto;
+}
+
+.tt-hint, .tt-query {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.typeahead-header {
+    margin: 0 5px 5px 5px;
+    padding: 3px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-container {
+    width: 250px;
+}
+
+#searchbox {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.leaflet-popup-content {
+    margin-top: 14px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a.toggle {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-top-right-radius: 4px !important;
+    -moz-border-top-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    -webkit-border-bottom-right-radius: 4px !important;
+    -moz-border-bottom-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    background-color: #222;
+    color: white;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+a:hover.toggle {
+    background-color: #222;
+    color: white;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-brand {
+        font-size: 18px;
+        float: left;
+    }
+
+    .search-container {
+        width: 150px;
+    }
+
+    .leaflet-control-attribution {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 100%;
+    }
+}
+
+/* Print Handling */
+@media print {
+    .navbar, .toggle, #sidebar {
+        display: none !important;
+    }
+}
